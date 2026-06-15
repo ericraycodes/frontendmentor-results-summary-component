@@ -1,0 +1,86 @@
+/* RESULT COMPONENT */
+.result {
+  /* style */
+  background-color: var(--light-slate-blue);
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue) 0%,
+    var(--light-royal-blue) 60%
+  );
+  border-radius: 25px;
+  /* typo */
+  color: var(--white);
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+/* heading */
+.result > h2 {
+  opacity: 0.8;
+}
+/* result figure container */
+.result > figure {
+  width: 100%;
+  /* center contents */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+/* result circle */
+.data-circle {
+  /* create circle inside the result component */
+  display: inline-flex;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  /* center contents */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* style */
+  background-color: var(--violet-blue);
+  background-image: linear-gradient(
+    to bottom,
+    var(--violet-blue) 0%,
+    var(--light-royal-blue) 70%
+  );
+}
+.data-circle > data {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.data-container > p {
+  font-weight: 500;
+  opacity: 80%;
+}
+/* result description */
+.result-description-container {
+  /* center contents */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.result p {
+  font-size: 0.8rem;
+  color: var(--light-lavender);
+  opacity: 0.9;
+}
+.result strong {
+  font-size: 1.3rem;
+  font-weight: light;
+  color: var(--white);
+}
+.description {
+  width: 65%;
+}

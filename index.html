@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="result-summary-card">
+      <section class="result component">
+        <h2>Your Result</h2>
+        <figure class="result-data-description-container">
+          <output class="data-circle">
+            <data value="76">76</data>
+            <p>of 100</p>
+          </output>
+          <figcaption class="result-description-container">
+            <p><strong>Great</strong></p>
+            <p class="description">
+              You scored higher than <data value="0.65">65%</data> of the people
+              who have taken these tests.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="summary component">
+        <h2>Summary</h2>
+        <ul class="list">
+          <li class="list-item reaction">
+            <label for="Reaction" class="summary-label"
+              ><img
+                src="./assets/images/icon-reaction.svg"
+                alt="A lightning bolt icon."
+              />
+              <p>Reaction</p></label
+            >
+            <output id="Reaction" class="summary-output"
+              ><data value="80">80</data><span>/ 100</span></output
+            >
+          </li>
+          <li class="list-item memory">
+            <label for="Memory" class="summary-label"
+              ><img src="./assets/images/icon-memory.svg" alt="A brain icon." />
+              <p>Memory</p></label
+            >
+            <output id="Memory" class="summary-output"
+              ><data value="80">92</data><span>/ 100</span></output
+            >
+          </li>
+          <li class="list-item verbal">
+            <label for="Verbal" class="summary-label">
+              <img src="./assets/images/icon-verbal.svg" alt="A bubble icon." />
+              <p>Verbal</p></label
+            >
+            <output id="Verbal" class="summary-output"
+              ><data value="80">61</data><span>/ 100</span></output
+            >
+          </li>
+          <li class="list-item visual">
+            <label for="Visual" class="summary-label">
+              <img src="./assets/images/icon-visual.svg" alt="An eye icon." />
+              <p>Visual</p></label
+            >
+            <output id="Visual" class="summary-output"
+              ><data value="80">73</data><span>/ 100</span></output
+            >
+          </li>
+        </ul>
+        <button>Continue</button>
+      </section>
+    </main>
+
+    <!-- FOOTER: added by frontendmentor -->
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Eric Ray Saladar</a>.
+    </footer>
+  </body>
+</html>
