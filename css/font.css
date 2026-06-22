@@ -1,8 +1,8 @@
 /* TYPO */
 @font-face {
   font-family: "Hanken Grotesk";
-  src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf)
-    format("truetype");
+  src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.woff2)
+    format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 /* medium */
 @font-face {
   font-family: "Hanken Grotesk";
-  src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf) format("truetype");
+  src: url(../assets/fonts/static/HankenGrotesk-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 /* bold */
 @font-face {
   font-family: "Hanken Grotesk";
-  src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf) format("truetype");
+  src: url(../assets/fonts/static/HankenGrotesk-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -26,8 +26,7 @@
 /* extra bold */
 @font-face {
   font-family: "Hanken Grotesk";
-  src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf)
-    format("truetype");
+  src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.woff2) format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
