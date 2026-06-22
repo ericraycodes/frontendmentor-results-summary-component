@@ -18,4 +18,12 @@
   .attribution {
     font-size: var(--footer-mobile-font-size);
   }
+
+  /* mobile styles */
+  .result {
+    /* heading */
+    h2 {
+      font-size: 1rem;
+    }
+  }
 }
