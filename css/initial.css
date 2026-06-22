@@ -1,0 +1,39 @@
+/* INITIAL RULE */
+html {
+  font-size: 20px;
+  font-family: "Hanken Grotesk";
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  /* box */
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  /* style */
+  background-color: var(--pale-blue);
+}
+
+/* CARD */
+.result-summary-card {
+  background-color: var(--white);
+}
+
+/* footer */
+.attribution {
+  /* font-size: 0.7rem; */
+  text-align: center;
+  /* arrange content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  padding-left: 3px;
+}
