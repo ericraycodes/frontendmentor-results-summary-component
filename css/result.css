@@ -7,7 +7,7 @@
     var(--light-slate-blue) 0%,
     var(--light-royal-blue) 60%
   );
-  border-radius: 25px;
+  /* border-radius: 25px; */
   /* typo */
   color: var(--white);
   /* layout */
