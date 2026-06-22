@@ -1,13 +1,13 @@
 /* SUMMARY COMPONENT */
 .summary {
-  /* box */
-  padding: 2rem;
   /* text color */
   color: var(--dark-gray-blue);
+  /* box */
+  padding: 0 2rem;
   /* arrange content */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* list container */
@@ -52,37 +52,35 @@
 /* summary list containers */
 .reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
+  p {
+    color: var(--light-red);
+  }
 }
 .memory {
   background-color: hsla(39, 100%, 56%, 0.1);
+  p {
+    color: var(--orange-yellow);
+  }
 }
 .verbal {
   background-color: hsla(166, 100%, 37%, 0.1);
+  p {
+    color: var(--green-teal);
+  }
 }
 .visual {
   background-color: hsla(234, 85%, 45%, 0.1);
-}
-
-/* summary labels */
-.reaction p {
-  color: var(--light-red);
-}
-.memory p {
-  color: var(--orange-yellow);
-}
-.verbal p {
-  color: var(--green-teal);
-}
-.visual p {
-  color: var(--cobalt-blue);
+  p {
+    color: var(--cobalt-blue);
+  }
 }
 
 /* summary output */
 .summary-output {
   font-weight: 700;
-}
-.summary-output > span {
-  color: hsla(224, 30%, 27%, 0.5);
+  span {
+    color: hsla(224, 30%, 27%, 0.5);
+  }
 }
 
 /* button */

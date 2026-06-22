@@ -35,13 +35,13 @@
         font-size: 0.8rem;
       }
     }
-  }
-  .description-container {
-    strong {
-      font-size: 1.2rem;
-    }
-    .description {
-      font-size: 0.7rem;
+    .description-container {
+      strong {
+        font-size: 1.2rem;
+      }
+      .description {
+        font-size: 0.7rem;
+      }
     }
   }
 }
