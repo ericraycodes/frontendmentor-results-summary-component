@@ -21,9 +21,27 @@
 
   /* mobile styles */
   .result {
-    /* heading */
+    /* narrow scree, small heading */
     h2 {
       font-size: 1rem;
+    }
+    .data-circle {
+      height: 40vh;
+
+      data {
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .description-container {
+    strong {
+      font-size: 1.2rem;
+    }
+    .description {
+      font-size: 0.7rem;
     }
   }
 }
