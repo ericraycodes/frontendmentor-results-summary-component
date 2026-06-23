@@ -96,13 +96,15 @@
   /* typo */
   font-size: 0.8rem;
   font-weight: 500;
-}
-.button:hover {
-  cursor: pointer;
-  background-image: linear-gradient(
-    to bottom,
-    var(--light-slate-blue),
-    10%,
-    var(--light-royal-blue)
-  );
+
+  /* on hover */
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-slate-blue),
+      10%,
+      var(--light-royal-blue)
+    );
+  }
 }
