@@ -1,5 +1,5 @@
 /* Mobile design: 320px-430px screenwidth; 570px screenheight; aspect ratio  */
-@media screen and (max-height: 490px) and (max-width: 440px) {
+@media screen and (max-height: 490px) and (min-width: 320px) and (max-width: 440px) {
   /* arrange body app and footer */
   body {
     display: flex;
