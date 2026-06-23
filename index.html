@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <!-- displays site properly based on user's device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- description -->
     <meta
       name="description"
       content="This is a solution for FrontenMentor's challenge task of Results summary component."
@@ -49,23 +50,23 @@
   </head>
   <body>
     <main class="result-summary-card">
-      <section class="result component">
-        <h2>Your Result</h2>
-        <output class="data-circle">
-          <data value="76">76</data>
+      <section class="component result">
+        <h2 class="component-heading">Your Result</h2>
+        <output class="output-circle">
+          <data class="result-output" value="76">76</data>
           <p>of 100</p>
         </output>
-        <div class="description-container">
-          <strong>Great</strong>
-          <p class="description">
+        <div class="result-analysis-container">
+          <strong class="evaluative-analysis">Great</strong>
+          <p class="statistical-analysis">
             You scored higher than <data value="0.65">65%</data> of the people
             who have taken these tests.
           </p>
         </div>
       </section>
-      <section class="summary component">
-        <h2>Summary</h2>
-        <ul class="list">
+      <section class="component summary">
+        <h2 class="component-heading">Summary</h2>
+        <ul class="summary-list">
           <li class="list-item reaction">
             <label for="Reaction" class="summary-label"
               ><img
