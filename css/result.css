@@ -1,1 +1,85 @@
-/* This is a mobile first styling. */
+/* /////        RESULT COMPONENT         */
+
+/* This is a mobile first styling.
+    A 430px maximum screen width.
+    A 660px minimum screen-height. */
+@media screen and (max-width: 430px) and (min-height: 660px) {
+  .result {
+    /* arrange content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7em;
+    padding: 1em 2em 1.5em;
+
+    /* background style */
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-slate-blue) 0%,
+      var(--light-royal-blue) 60%
+    );
+    /* background fallback */
+    background-color: var(--light-slate-blue);
+
+    /* box */
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    /* typo */
+    color: var(--white);
+  }
+  .result {
+    /* general tags */
+    h2 {
+      margin: 0;
+      opacity: 0.8;
+    }
+    p {
+      margin: 0;
+      opacity: 0.75;
+    }
+
+    /* OUTPUT */
+    .output-circle {
+      /* center contents */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      /* background style */
+      background-image: linear-gradient(
+        to bottom,
+        var(--violet-blue) 0%,
+        var(--light-royal-blue) 70%
+      );
+      /* fallback background */
+      background-color: var(--violet-blue);
+
+      /* make into a circle */
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      padding: 1em;
+    }
+    .output-circle {
+      data {
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+      p {
+        opacity: 0.6;
+      }
+    }
+    /* ANALYSIS */
+    .result-analysis-container {
+      text-align: center;
+    }
+    .result-analysis-container {
+      p {
+        padding: 0.5em 0 0;
+      }
+    }
+  }
+}

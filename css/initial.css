@@ -22,7 +22,17 @@ body {
 /* CARD */
 /* Mobile first styles */
 .result-summary-card {
-  .component-heading {
+  /* dimension */
+  height: 100vh;
+
+  /* arrange components */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.result-summary-card {
+  h2 {
     font-size: 0.9em;
   }
   p {
