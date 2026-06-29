@@ -19,6 +19,20 @@ body {
   background-color: var(--pale-blue);
 }
 
+/* CARD */
+/* Mobile first styles */
+.result-summary-card {
+  .component-heading {
+    font-size: 0.9em;
+  }
+  p {
+    font-size: 0.7em;
+  }
+  .summary output {
+    font-size: 0.7em;
+  }
+}
+
 /* FOOTER */
 .attribution {
   /* typo */
