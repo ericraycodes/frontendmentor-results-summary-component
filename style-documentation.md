@@ -1,4 +1,4 @@
-# Mobile First Styling
+# MOBILE FIRST DESIGN
 
 ## Old / rare screen sizes
 
