@@ -6,17 +6,21 @@
     removes margin collapse */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 1em 2em 1.5em;
+  gap: 2em;
+  /* padding: 1em 2em 1.5em; */
+  padding: 2em;
 }
 .component {
   /* typo */
   h2 {
     font-size: 0.9em;
+    margin: 0;
   }
   p {
     font-size: 0.7em;
+    margin: 0;
   }
 }
 
@@ -39,16 +43,14 @@
 .result {
   /* text tags */
   h2 {
-    /* margin: 0; */
     opacity: 0.8;
   }
   p {
-    /* margin: 0; */
     opacity: 0.75;
   }
   strong {
     display: block;
-    margin-top: 1em;
+    margin-bottom: 0.5em;
   }
 
   /* center analysis texts */
@@ -80,19 +82,25 @@
   padding: 1em;
 
   /* Fill available space for a circle.
-  Max values set to retain a circular form inside its parent box. */
-  flex: 1;
-  max-width: calc(100vw - 2em - 2em - 0.5em);
-  max-height: calc(100vw - 2em - 2em - 0.5em);
+  Initial value at 90% of horizontal space.
+  Shrinks according to vertical space. */
+  flex-basis: calc(90vw - 2em - 2em - 0.5em);
+  flex-shrink: 1;
 }
 
 /* Make the result output data rating responsive to the parent circle container's size */
 .output-circle {
-  container-type: inline-size;
+  container-type: size;
 }
 .output-circle > data {
-  font-size: clamp(2em, 50cqw, 10em);
-  /* font-size: calc(0.3 * (100vw - 2em - 2em - 0.5em)); */
+  font-weight: bold;
+  font-size: 60cqi;
+  /* font-size: clamp(2em, 60cqw, 60cqw); */
+}
+.output-circle > p {
+  font-size: 10cqi;
+  /* font-size: clamp(0.7em, 10cqw, 10cqw); */
+  opacity: 0.6;
 }
 
 /*  SUMMARY COMPONENT */
