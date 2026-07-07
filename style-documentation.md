@@ -9,4 +9,5 @@ The _Result Component_ occupies the first fullscreen followed by the _Summary Co
 ## Modern mobile devices
 
 Standard Android devices can base on **360x640px**. The maximum width stops at around **480px**. The **768px** enters a tablet's screen width.
+
 The design will occupy one fullscreen - no scrolls. All components are laid out on vertical arrangement.
