@@ -21,6 +21,10 @@
     font-size: 0.7em;
     margin: 0;
   }
+  data,
+  span {
+    font-size: 0.7em;
+  }
 }
 
 /* RESULT COMPONENT */
@@ -107,4 +111,55 @@ the parent circle container's size */
 /*  SUMMARY COMPONENT */
 .summary {
   height: 100vh;
+  background-color: var(--white);
+}
+.summary {
+  h2 {
+    /* arrange summary heading */
+    align-self: flex-start;
+  }
+
+  ul {
+    /* remove native styles of list */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* box */
+    width: 100%;
+
+    /* arrange contents */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .list-item {
+    /* box */
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: lightgray;
+
+    /* arrange contents */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* sumarry list items */
+.list-item {
+  /* list label and output */
+  label,
+  output {
+    /* arrange content */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+}
+.list-item {
 }
