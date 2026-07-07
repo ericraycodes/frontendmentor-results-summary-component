@@ -1,0 +1,112 @@
+/* /////     SMALLEST MOBILE SCREEN      */
+
+/* COMPONENTS */
+.component {
+    /* each component with full viewport */
+    height: 100vh;
+  
+    /* arrange content,
+      removes margin collapse */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+  }
+  .component {
+    /* typo */
+    h2 {
+      font-size: 0.9em;
+      margin: 0;
+    }
+    p {
+      font-size: 0.7em;
+      margin: 0;
+    }
+    data,
+    span {
+      font-size: 0.7em;
+    }
+  }
+  
+  /* RESULT COMPONENT */
+  .result {
+    /* background style */
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-slate-blue) 0%,
+      var(--light-royal-blue) 70%
+    );
+    /* background fallback */
+    background-color: var(--light-slate-blue);
+  
+    /* text color */
+    color: var(--white);
+  
+    /* container */
+    container-type: inline-size;
+  }
+  .result {
+    /* text tags */
+    h2 {
+      opacity: 0.8;
+    }
+    p {
+      opacity: 0.75;
+    }
+    strong {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+  
+    /* center analysis texts */
+    .result-analysis-container > * {
+      text-align: center;
+    }
+  }
+  
+  /* OUTPUT */
+  .output-circle {
+    /* center contents */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    /* background style */
+    background-image: linear-gradient(
+      to bottom,
+      var(--violet-blue) 0%,
+      var(--light-royal-blue) 70%
+    );
+    /* fallback background */
+    background-color: var(--violet-blue);
+  
+    /* make into a circle */
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding: 1em;
+  
+    /* Fill available space for a circle.
+    Initial value at 90% of horizontal space.
+    Shrinks according to vertical space. */
+    flex-basis: 90cqi;
+    flex-shrink: 1;
+  }
+  
+  /* Make the result output data rating responsive to
+  the parent circle container's size */
+  .output-circle {
+    container-type: size;
+  }
+  .output-circle > data {
+    font-weight: bold;
+    font-size: 60cqi;
+  }
+  .output-circle > p {
+    font-size: 10cqi;
+    opacity: 0.6;
+  }
+  
+  
