@@ -19,30 +19,6 @@ body {
   background-color: var(--pale-blue);
 }
 
-/* CARD */
-/* Mobile first styles */
-.result-summary-card {
-  /* dimension */
-  height: 100vh;
-
-  /* arrange components */
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-.result-summary-card {
-  h2 {
-    font-size: 0.9em;
-  }
-  p {
-    font-size: 0.7em;
-  }
-  .summary output {
-    font-size: 0.7em;
-  }
-}
-
 /* FOOTER */
 .attribution {
   /* typo */
