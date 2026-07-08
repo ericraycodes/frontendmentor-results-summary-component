@@ -14,7 +14,7 @@ The design will occupy one fullscreen - no scrolls. All components are laid out 
 
 ## Font Readability
 
-## Font sizes
+### Font sizes
 
 **Body text**: set to 16px to 18px (or 1rem to 1.125rem). Never set body text below 14px to avoid requiring users to pinch-and-zoom.
 
@@ -26,7 +26,7 @@ The design will occupy one fullscreen - no scrolls. All components are laid out 
 
 [read here](https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html)
 
-## Spacings and Proportions
+### Spacings and Proportions
 
 **Line Height**: Set line spacing between 1.5 and 1.8 times the font size (e.g., a 16px font should have a 24px to 28px line height).
 
