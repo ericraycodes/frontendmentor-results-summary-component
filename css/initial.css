@@ -2,7 +2,7 @@
 
 html {
   font-family: "Hanken Grotesk";
-  font-size: 20px;
+  font-size: 18px;
 }
 
 * {
@@ -23,15 +23,22 @@ body {
 /* FOOTER */
 .attribution {
   /* typo */
-  font-size: 0.5em;
+  font-size: 14px;
   text-align: center;
   /* arrange content */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2em 0;
+  gap: 0.5em;
+  padding: 2em 1em;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-  padding-left: 3px;
+.attribution {
+  p {
+    margin: 0;
+  }
+  a {
+    color: hsl(228, 45%, 44%);
+    padding-left: 3px;
+  }
 }

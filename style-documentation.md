@@ -35,3 +35,7 @@ For HTML **footers**, a font size between 14px and 16px (or 0.875rem to 1rem)
 **Line Length** (Measure): Keep line lengths to **50–75 characters** per line for optimal mobile readability.
 
 [read here](https://medium.com/design-bootcamp/font-size-usage-in-ui-ux-design-web-mobile-tablet-52a9e17c16ce)
+
+## Responsive HTML boxes
+
+I used **container queries** to make box sizes responsive to screen devices, layout, viewport, etc.

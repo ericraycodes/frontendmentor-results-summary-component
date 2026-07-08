@@ -9,9 +9,9 @@
       removes margin collapse */
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  gap: 2em;
+  /* gap: 2em; */
   padding: 2em;
 
   /* container */
@@ -20,18 +20,19 @@
 .component {
   /* typo */
   h2 {
-    font-size: 0.9em;
+    font-size: 1.15em;
+    margin: 0;
+  }
+  h3 {
     margin: 0;
   }
   p {
-    font-size: 0.7em;
     margin: 0;
   }
-  data,
-  span {
-    font-size: 0.7em;
-  }
-  p > data {
+  /* Button and strong tags has fixed user-agent style,
+    it does not inherit font-size at the root.
+    Here, the button tag is sized similar to the h2 tag. */
+  button {
     font-size: 1em;
   }
 }
@@ -58,16 +59,18 @@
   p {
     opacity: 0.75;
   }
-  strong {
-    display: block;
+  h3 {
     margin-bottom: 0.5em;
   }
 
   /* center analysis texts */
-  .result-analysis-container > * {
+  .result-analysis-box > * {
     text-align: center;
   }
 }
+
+/* Result Component Layout:
+  3 flex items:  */
 
 /* OUTPUT */
 .output-circle {
@@ -92,7 +95,7 @@
   padding: 1em;
 
   /* Fill available space for a circle.
-    Initial value at 90% of horizontal space.
+    Initial value at 60% of either horizontal / vertical space.
     Shrinks according to vertical space. */
   flex-basis: 60cqmin;
   flex-shrink: 1;
@@ -105,9 +108,9 @@
 }
 .output-circle > data {
   font-weight: bold;
-  font-size: 20cqi;
+  font-size: clamp(1.5em, 60cqi, 3.5em);
 }
 .output-circle > p {
-  font-size: 10cqi;
+  font-size: clamp(16px, 15cqi, 20px);
   opacity: 0.6;
 }
