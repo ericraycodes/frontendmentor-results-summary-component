@@ -9,9 +9,9 @@
       removes margin collapse */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  /* gap: 2em; */
+  gap: 2em;
   padding: 2em;
 
   /* container */
@@ -105,12 +105,13 @@
   the parent circle container's size */
 .output-circle {
   container-type: size;
-}
-.output-circle > data {
-  font-weight: bold;
-  font-size: clamp(1.5em, 60cqi, 3.5em);
-}
-.output-circle > p {
-  font-size: clamp(16px, 15cqi, 20px);
-  opacity: 0.6;
+
+  data {
+    font-weight: bold;
+    font-size: clamp(1.5em, 60cqi, 3.5em);
+  }
+  p {
+    font-size: clamp(16px, 15cqi, 20px);
+    opacity: 0.6;
+  }
 }

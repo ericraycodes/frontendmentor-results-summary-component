@@ -17,15 +17,12 @@
     /* box */
     width: 100%;
 
-    /* fill free space as a flex item */
-    flex-grow: 1;
-
     /* arrange contents */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 0.5em;
+    gap: 1em;
   }
 
   .list-item {
