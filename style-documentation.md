@@ -14,24 +14,24 @@ The design will occupy one fullscreen - no scrolls. All components are laid out 
 
 ## Font Readability
 
-    ### Font sizes
+### Font sizes
 
-    **Body text**: set to **16px** to **18px** (or 1rem to 1.125rem). Never set body text below 14px to avoid requiring users to pinch-and-zoom.
+**Body text**: set to **16px** to **18px** (or 1rem to 1.125rem). Never set body text below 14px to avoid requiring users to pinch-and-zoom.
 
-    **Headings (H1)**: **24px** to **32px** (or about 1.5em to 2em).
+**Headings (H1)**: **24px** to **32px** (or about 1.5em to 2em).
 
-    **Subheadings (H2, H3)**: **18px** to **24px** to maintain a structured information hierarchy.
+**Subheadings (H2, H3)**: **18px** to **24px** to maintain a structured information hierarchy.
 
-    **Buttons** and **Inputs**: At least **16px** so they are easy to tap without accidentally hitting adjacent links
+**Buttons** and **Inputs**: At least **16px** so they are easy to tap without accidentally hitting adjacent links
 
-    For HTML **footers**, a font size between 14px and 16px (or 0.875rem to 1rem)
+For HTML **footers**, a font size between 14px and 16px (or 0.875rem to 1rem)
 
 [read here](https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html)
 
 ### Spacings and Proportions
 
-    **Line Height**: Set line spacing between **1.5** and **1.8** times the font size (e.g., a 16px font should have a **24px** to **28px** line height).
+**Line Height**: Set line spacing between **1.5** and **1.8** times the font size (e.g., a 16px font should have a **24px** to **28px** line height).
 
-    **Line Length** (Measure): Keep line lengths to **50–75 characters** per line for optimal mobile readability.
+**Line Length** (Measure): Keep line lengths to **50–75 characters** per line for optimal mobile readability.
 
 [read here](https://medium.com/design-bootcamp/font-size-usage-in-ui-ux-design-web-mobile-tablet-52a9e17c16ce)
