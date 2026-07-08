@@ -1,0 +1,33 @@
+/* MODERN MOBILE DEVICES */
+@media screen and (max-width: 481px) and (min-height: 640px) {
+  /* RESULT SUMMARY CARD */
+  .result-summary-card {
+    /* the Result and Summary component will show in one full viewport */
+    height: 100vh;
+  }
+  .result-summary-card {
+    /* .component {
+      height: unset;
+    } */
+  }
+
+  /* RESULT COMPONENT */
+  .result {
+    /* box */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 2em 3em;
+    height: 40%;
+  }
+  .result {
+    .output-circle {
+      flex-basis: 50cqmin;
+    }
+  }
+
+  /* SUMMARY COMPONENT */
+  .summary {
+    /* box */
+    height: 60%;
+  }
+}
