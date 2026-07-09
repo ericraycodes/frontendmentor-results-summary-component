@@ -1,0 +1,46 @@
+/* TABLETS & DESKTOPS: 768px screen-width and up */
+
+@media screen and (min-width: 768px) {
+  body {
+    /* arrange result-summary-card and attribution */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  /* CARD */
+  .result-summary-card {
+    /* box */
+    width: 40em;
+    height: auto;
+    border-radius: 25px;
+
+    /* arrange components side-to-side */
+    flex-direction: row;
+  }
+
+  /* RESULT COMPONENT */
+  .result {
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .result {
+    .output-circle {
+      flex-basis: 80cqmin;
+    }
+  }
+
+  /* SUMMARY COMPONENT */
+  .summary {
+    height: auto;
+  }
+
+  /* FOOTER */
+  .attribution {
+    flex-direction: row;
+  }
+}
