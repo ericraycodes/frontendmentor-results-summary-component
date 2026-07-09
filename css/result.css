@@ -11,8 +11,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* gap: 2em; */
-  gap: clamp(0.5em, 1.25cqh, 2em);
+  gap: 2em;
   padding: 2em;
 
   /* container */
@@ -25,6 +24,7 @@
     margin: 0;
   }
   h3 {
+    font-size: 2em;
     margin: 0;
   }
   p {
@@ -93,12 +93,12 @@
   /* make into a circle */
   border-radius: 50%;
   aspect-ratio: 1/1;
-  padding: 1em;
+  padding: 1.5em;
 
   /* Fill available space for a circle.
     Initial value at 60% of either horizontal / vertical space.
     Shrinks according to vertical space. */
-  flex-basis: 60cqmin;
+  flex-basis: 70cqmin;
   flex-shrink: 1;
 }
 
@@ -109,10 +109,11 @@
 
   data {
     font-weight: bold;
-    font-size: clamp(1.5em, 60cqi, 3.5em);
+    /* font-size: clamp(1.5em, 60cqi, 3.5em); */
+    font-size: clamp(1.5em, 60cqmin, 60cqmin);
   }
   p {
-    font-size: clamp(16px, 15cqi, 20px);
+    font-size: clamp(16px, 15cqmin, 20px);
     opacity: 0.6;
   }
 }
