@@ -24,6 +24,17 @@
   }
 
   /* COMPONENTS */
+  .component {
+    h2 {
+      font-size: 1.25em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+    label > p {
+      font-weight: 500;
+    }
+  }
 
   /* RESULT COMPONENT */
   .result {
