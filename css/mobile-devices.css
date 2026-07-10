@@ -21,7 +21,6 @@
   .result {
     .output-circle {
       flex-basis: 50cqmin;
-      /* flex: 1 1 150px; */
     }
     h3 {
       font-size: 1.5em;
