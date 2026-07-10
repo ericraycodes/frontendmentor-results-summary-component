@@ -44,7 +44,7 @@
   background-image: linear-gradient(
     to bottom,
     var(--light-slate-blue) 0%,
-    var(--light-royal-blue) 70%
+    var(--light-royal-blue) 60%
   );
   /* background fallback */
   background-color: var(--light-slate-blue);
@@ -93,7 +93,7 @@
   /* make into a circle */
   border-radius: 50%;
   aspect-ratio: 1/1;
-  padding: 1.5em;
+  padding: 2em;
 
   /* Fill available space for a circle.
     Initial value at 60% of either horizontal / vertical space.
