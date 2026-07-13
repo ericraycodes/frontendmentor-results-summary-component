@@ -1,8 +1,485 @@
 /* IMPORTS */
-@import url(./font.css);
-@import url(./variables.css);
-@import url(./initial.css);
-@import url(./result.css);
-@import url(./summary.css);
-@import url(./mobile-devices.css);
-@import url(./tablet-desktop.css);
+/* @import url(./font.css); */
+/* @import url(./variables.css); */
+/* @import url(./initial.css); */
+/* @import url(./result.css); */
+/* @import url(./summary.css); */
+/* @import url(./mobile-devices.css); */
+/* @import url(./tablet-desktop.css); */
+
+/* TYPO */
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.woff2)
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* medium */
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(../assets/fonts/static/HankenGrotesk-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* bold */
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(../assets/fonts/static/HankenGrotesk-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* extra bold */
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* VARIABLES */
+:root {
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  /* background */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  /* circle */
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  /* summary list primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* footer mobile dimension */
+  --footer-mobile-height: 30px;
+  --footer-mobile-font-size: 0.5rem;
+}
+
+/* /////    INITIAL RULES    */
+
+html {
+  font-family: "Hanken Grotesk";
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+/* The body will serve as the background of the result-summary-card */
+body {
+  /* Occupies the full viewport */
+  min-width: 320px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: var(--pale-blue);
+}
+.result-summary-card {
+  background-color: var(--white);
+  /* used the light lavender color for shadow */
+  box-shadow: 0px 0.5em 1em 1px hsla(241, 100%, 89%, 0.5);
+  container-type: inline-size;
+}
+
+/* FOOTER */
+.attribution {
+  /* typo */
+  font-size: 14px;
+  text-align: center;
+  /* arrange content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em 1em;
+
+  /* children */
+  p {
+    margin: 0;
+  }
+  a {
+    color: hsl(228, 45%, 44%);
+    padding-left: 3px;
+  }
+}
+
+/* /////     SMALLEST MOBILE SCREEN      */
+
+/* COMPONENTS */
+.component {
+  /* each component with full viewport */
+  height: 100vh;
+
+  /* arrange content,
+        removes margin collapse */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+
+  /* container */
+  container-type: inline-size;
+
+  /* typo */
+  h2 {
+    font-size: 1.15em;
+    margin: 0;
+  }
+  h3 {
+    font-size: 2em;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  /* Button and strong tags has fixed user-agent style,
+      it does not inherit font-size at the root.
+      Here, the button tag is sized similar to the h2 tag. */
+  button {
+    font-size: 1em;
+  }
+}
+
+/* RESULT COMPONENT */
+.result {
+  /* background style */
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue) 0%,
+    var(--light-royal-blue) 60%
+  );
+  /* background fallback */
+  background-color: var(--light-slate-blue);
+
+  /* text color */
+  color: var(--white);
+
+  /* text tags */
+  h2 {
+    opacity: 0.8;
+  }
+  p {
+    opacity: 0.75;
+  }
+  h3 {
+    margin-bottom: clamp(0.25em, 1.4cqh, 0.5em);
+  }
+
+  /* center analysis texts */
+  .result-analysis-box > * {
+    text-align: center;
+  }
+}
+
+/* OUTPUT */
+.output-circle {
+  /* center contents */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background style */
+  background-image: linear-gradient(
+    to bottom,
+    var(--violet-blue) 0%,
+    var(--light-royal-blue) 70%
+  );
+  /* fallback background */
+  background-color: var(--violet-blue);
+
+  /* make into a circle */
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  padding: 2em;
+
+  /* Fill available space for a circle.
+      Initial value at 60% of either horizontal / vertical space.
+      Shrinks according to vertical space. */
+  flex-basis: 70cqmin;
+  flex-shrink: 1;
+}
+
+/* Make the result output data rating responsive to
+    the parent circle container's size */
+.output-circle {
+  container-type: size;
+
+  data {
+    font-weight: bold;
+    /* font-size: clamp(1.5em, 60cqi, 3.5em); */
+    font-size: clamp(1.5em, 60cqmin, 60cqmin);
+  }
+  p {
+    font-size: clamp(16px, 15cqmin, 20px);
+    opacity: 0.6;
+  }
+}
+
+/*  SUMMARY COMPONENT */
+.summary {
+  h2 {
+    /* arrange summary heading */
+    align-self: flex-start;
+  }
+
+  ul {
+    /* remove native styles of list */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* box */
+    width: 100%;
+    flex-shrink: 1;
+
+    /* arrange contents */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.5em, 2.7cqh, 1em);
+  }
+  .list-item {
+    /* box */
+    width: 100%;
+    /* height: 2.5em; */
+    padding: 1em;
+    border-radius: 0.5em;
+
+    /* arrange contents */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* sumarry list items */
+.list-item {
+  /* list label and output */
+  .summary-label,
+  output {
+    /* arrange content */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+}
+
+/* summary list containers */
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  p {
+    color: var(--light-red);
+  }
+}
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  p {
+    color: var(--orange-yellow);
+  }
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  p {
+    color: var(--green-teal);
+  }
+}
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  p {
+    color: var(--cobalt-blue);
+  }
+}
+
+/* summary output */
+.summary-output {
+  font-weight: 700;
+  span {
+    color: hsla(224, 30%, 27%, 0.5);
+  }
+}
+
+/* button */
+button {
+  /* remove native styles */
+  all: unset;
+
+  /* box styles */
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--dark-gray-blue);
+  /* height: 2.5em; */
+  padding: 0.75em;
+  border-radius: 25px;
+  text-align: center;
+
+  /* typo */
+  font-weight: 500;
+  color: var(--white);
+
+  /* on hover */
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-slate-blue),
+      10%,
+      var(--light-royal-blue)
+    );
+  }
+  /* on focus */
+  &:focus {
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-slate-blue),
+      10%,
+      var(--light-royal-blue)
+    );
+    border: 0.25em solid gray;
+  }
+}
+
+/* MODERN MOBILE DEVICES */
+
+@media screen and (min-height: 568px) {
+  /* RESULT SUMMARY CARD */
+  .result-summary-card {
+    /* the Result and Summary component will show in one full viewport */
+    /* height: 100vh; */
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* RESULT COMPONENT */
+  .result {
+    /* box */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 1.5em 3em 3em;
+    height: auto;
+
+    .output-circle {
+      flex-basis: 50cqmin;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+
+  /* SUMMARY COMPONENT */
+  .summary {
+    /* box */
+    height: auto;
+  }
+}
+
+@media screen and (min-height: 840px) {
+  /* RESULT SUMMARY CARD */
+  .result-summary-card {
+    /* the Result and Summary component will show in one full viewport */
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* RESULT COMPONENT */
+  .result {
+    /* box */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 1.5em 3em 3em;
+    height: auto;
+
+    .output-circle {
+      flex-basis: 50cqmin;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+
+  /* SUMMARY COMPONENT */
+  .summary {
+    /* box */
+    flex: 1;
+  }
+}
+
+/* TABLETS & DESKTOPS: 768px screen-width and up */
+
+@media screen and (min-width: 768px) {
+  body {
+    /* arrange result-summary-card and attribution */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  /* CARD */
+  .result-summary-card {
+    /* box */
+    /* aspect-ratio: 1/1; */
+    width: 40em;
+    height: auto;
+    border-radius: 25px;
+
+    /* arrange components side-to-side */
+    flex-direction: row;
+  }
+
+  /* COMPONENTS */
+  .component {
+    h2 {
+      font-size: 1.25em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+    label > p {
+      font-weight: 500;
+    }
+  }
+
+  /* RESULT COMPONENT */
+  .result {
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+
+    .output-circle {
+      flex-basis: 80cqmin;
+    }
+  }
+
+  /* SUMMARY COMPONENT */
+  .summary {
+    height: auto;
+    flex: 1;
+  }
+
+  /* FOOTER */
+  .attribution {
+    flex-direction: row;
+  }
+}

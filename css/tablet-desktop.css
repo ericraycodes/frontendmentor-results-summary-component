@@ -41,8 +41,7 @@
     width: 50%;
     height: auto;
     border-radius: 25px;
-  }
-  .result {
+
     .output-circle {
       flex-basis: 80cqmin;
     }

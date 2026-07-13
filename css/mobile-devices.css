@@ -17,8 +17,7 @@
     border-bottom-right-radius: 25px;
     padding: 1.5em 3em 3em;
     height: auto;
-  }
-  .result {
+
     .output-circle {
       flex-basis: 50cqmin;
     }
@@ -51,8 +50,7 @@
     border-bottom-right-radius: 25px;
     padding: 1.5em 3em 3em;
     height: auto;
-  }
-  .result {
+
     .output-circle {
       flex-basis: 50cqmin;
     }

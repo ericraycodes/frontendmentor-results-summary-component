@@ -16,8 +16,7 @@
 
   /* container */
   container-type: inline-size;
-}
-.component {
+
   /* typo */
   h2 {
     font-size: 1.15em;
@@ -51,8 +50,7 @@
 
   /* text color */
   color: var(--white);
-}
-.result {
+
   /* text tags */
   h2 {
     opacity: 0.8;
@@ -69,9 +67,6 @@
     text-align: center;
   }
 }
-
-/* Result Component Layout:
-  3 flex items:  */
 
 /* OUTPUT */
 .output-circle {
