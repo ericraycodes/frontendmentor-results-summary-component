@@ -39,7 +39,7 @@
 /* sumarry list items */
 .list-item {
   /* list label and output */
-  label,
+  .summary-label,
   output {
     /* arrange content */
     display: flex;
