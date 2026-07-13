@@ -110,4 +110,14 @@ button {
       var(--light-royal-blue)
     );
   }
+  /* on focus */
+  &:focus {
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-slate-blue),
+      10%,
+      var(--light-royal-blue)
+    );
+    border: 0.25em solid gray;
+  }
 }
