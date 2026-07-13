@@ -256,6 +256,10 @@ body {
     align-items: center;
     gap: clamp(0.5em, 2.7cqh, 1em);
   }
+  /* for huawei mobiles persistent bullets */
+  ul li::-webkit-details-marker {
+    display: none !important;
+  }
   .list-item {
     /* box */
     width: 100%;
