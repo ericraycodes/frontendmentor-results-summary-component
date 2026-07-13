@@ -240,7 +240,7 @@ body {
 
   ul {
     /* remove native styles of list */
-    list-style: none;
+    list-style-type: none !important;
     margin: 0;
     padding: 0;
 
