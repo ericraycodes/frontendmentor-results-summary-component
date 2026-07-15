@@ -157,35 +157,33 @@ body {
 
 /* RESULT COMPONENT */
 .result {
+  /* background style fallback */
+  background-color: var(--light-slate-blue);
   /* background style */
   background-image: linear-gradient(
     to bottom,
     var(--light-slate-blue) 0%,
     var(--light-royal-blue) 60%
   );
-  /* background fallback */
-  background-color: var(--light-slate-blue);
 
   /* text color */
   color: var(--white);
-
-  /* text tags */
-  h2 {
-    opacity: 0.8;
-  }
-  p {
-    opacity: 0.75;
-  }
-  h3 {
-    margin-bottom: clamp(0.25em, 1.4cqh, 0.5em);
-  }
-
-  /* center analysis texts */
-  .result-analysis-box > * {
-    text-align: center;
-  }
+}
+/* text tags */
+.result h2 {
+  opacity: 0.8;
+}
+.result p {
+  opacity: 0.75;
+}
+.result h3 {
+  margin-bottom: clamp(0.25em, 1.4cqh, 0.5em);
 }
 
+/* center analysis texts */
+.result-analysis-box > * {
+  text-align: center;
+}
 /* OUTPUT */
 .output-circle {
   /* center contents */
@@ -194,14 +192,14 @@ body {
   justify-content: center;
   align-items: center;
 
+  /* fallback */
+  background-color: var(--violet-blue);
   /* background style */
   background-image: linear-gradient(
     to bottom,
     var(--violet-blue) 0%,
     var(--light-royal-blue) 70%
   );
-  /* fallback background */
-  background-color: var(--violet-blue);
 
   /* make into a circle */
   border-radius: 50%;
@@ -219,59 +217,52 @@ body {
     the parent circle container's size */
 .output-circle {
   container-type: size;
-
-  data {
-    font-weight: bold;
-    /* font-size: clamp(1.5em, 60cqi, 3.5em); */
-    font-size: clamp(1.5em, 60cqmin, 60cqmin);
-  }
-  p {
-    font-size: clamp(16px, 15cqmin, 20px);
-    opacity: 0.6;
-  }
+}
+.output-circle data {
+  font-weight: bold;
+  /* font-size: clamp(1.5em, 60cqi, 3.5em); */
+  font-size: clamp(1.5em, 60cqmin, 60cqmin);
+}
+.output-circle p {
+  font-size: clamp(16px, 15cqmin, 20px);
+  opacity: 0.6;
 }
 
 /*  SUMMARY COMPONENT */
-.summary {
-  h2 {
-    /* arrange summary heading */
-    align-self: flex-start;
-  }
+.summary h2 {
+  /* arrange summary heading */
+  align-self: flex-start;
+}
 
-  ul {
-    /* remove native styles of list */
-    list-style: none !important;
-    list-style-type: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
+.summary ul {
+  /* remove native styles of list */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    /* box */
-    width: 100%;
-    flex-shrink: 1;
+  /* box */
+  width: 100%;
+  flex-shrink: 1;
 
-    /* arrange contents */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: clamp(0.5em, 2.7cqh, 1em);
-  }
-  /* for huawei mobiles persistent bullets */
-  ul li::-webkit-details-marker {
-    display: none !important;
-  }
-  .list-item {
-    /* box */
-    width: 100%;
-    /* height: 2.5em; */
-    padding: 1em;
-    border-radius: 0.5em;
+  /* arrange contents */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.5em, 2.7cqh, 1em);
+}
 
-    /* arrange contents */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.summary .list-item {
+  /* box */
+  width: 100%;
+  /* height: 2.5em; */
+  padding: 1em;
+  border-radius: 0.5em;
+
+  /* arrange contents */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* sumarry list items */
