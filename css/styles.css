@@ -105,15 +105,14 @@ body {
   align-items: center;
   gap: 0.5em;
   padding: 1em 1em;
-
-  /* children */
-  p {
-    margin: 0;
-  }
-  a {
-    color: hsl(228, 45%, 44%);
-    padding-left: 3px;
-  }
+}
+/* children */
+.attribution p {
+  margin: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  padding-left: 3px;
 }
 
 /* /////     SMALLEST MOBILE SCREEN      */
@@ -134,25 +133,24 @@ body {
 
   /* container */
   container-type: inline-size;
-
-  /* typo */
-  h2 {
-    font-size: 1.15em;
-    margin: 0;
-  }
-  h3 {
-    font-size: 2em;
-    margin: 0;
-  }
-  p {
-    margin: 0;
-  }
+}
+/* typo */
+.component h2 {
+  font-size: 1.15em;
+  margin: 0;
+}
+.component h3 {
+  font-size: 2em;
+  margin: 0;
+}
+.component p {
+  margin: 0;
+}
+.component button {
   /* Button and strong tags has fixed user-agent style,
-      it does not inherit font-size at the root.
-      Here, the button tag is sized similar to the h2 tag. */
-  button {
-    font-size: 1em;
-  }
+    it does not inherit font-size at the root.
+    Here, the button tag is sized similar to the h2 tag. */
+  font-size: 1em;
 }
 
 /* RESULT COMPONENT */
@@ -265,50 +263,47 @@ body {
   align-items: center;
 }
 
-/* sumarry list items */
-.list-item {
-  /* list label and output */
-  .summary-label,
-  output {
-    /* arrange content */
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-  }
+/* list label and output */
+.list-item .summary-label,
+.list-item output {
+  /* arrange content */
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 /* summary list containers */
 .reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
-  p {
-    color: var(--light-red);
-  }
+}
+.reaction p {
+  color: var(--light-red);
 }
 .memory {
   background-color: hsla(39, 100%, 56%, 0.1);
-  p {
-    color: var(--orange-yellow);
-  }
+}
+.memory p {
+  color: var(--orange-yellow);
 }
 .verbal {
   background-color: hsla(166, 100%, 37%, 0.1);
-  p {
-    color: var(--green-teal);
-  }
+}
+.verbal p {
+  color: var(--green-teal);
 }
 .visual {
   background-color: hsla(234, 85%, 45%, 0.1);
-  p {
-    color: var(--cobalt-blue);
-  }
+}
+.visual p {
+  color: var(--cobalt-blue);
 }
 
 /* summary output */
 .summary-output {
   font-weight: 700;
-  span {
-    color: hsla(224, 30%, 27%, 0.5);
-  }
+}
+.summary-output span {
+  color: hsla(224, 30%, 27%, 0.5);
 }
 
 /* button */
@@ -328,27 +323,26 @@ button {
   /* typo */
   font-weight: 500;
   color: var(--white);
-
-  /* on hover */
-  &:hover {
-    cursor: pointer;
-    background-image: linear-gradient(
-      to bottom,
-      var(--light-slate-blue),
-      10%,
-      var(--light-royal-blue)
-    );
-  }
-  /* on focus */
-  &:focus {
-    background-image: linear-gradient(
-      to bottom,
-      var(--light-slate-blue),
-      10%,
-      var(--light-royal-blue)
-    );
-    border: 0.25em solid gray;
-  }
+}
+/* on hover */
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    10%,
+    var(--light-royal-blue)
+  );
+}
+/* on focus */
+button:focus {
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    10%,
+    var(--light-royal-blue)
+  );
+  border: 0.25em solid gray;
 }
 
 /* MODERN MOBILE DEVICES */
