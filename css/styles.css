@@ -364,13 +364,12 @@ button:focus {
     border-bottom-right-radius: 25px;
     padding: 1.5em 3em 3em;
     height: auto;
-
-    .output-circle {
-      flex-basis: 50cqmin;
-    }
-    h3 {
-      font-size: 1.5em;
-    }
+  }
+  .result .output-circle {
+    flex-basis: 50cqmin;
+  }
+  .result h3 {
+    font-size: 1.5em;
   }
 
   /* SUMMARY COMPONENT */
@@ -397,13 +396,12 @@ button:focus {
     border-bottom-right-radius: 25px;
     padding: 1.5em 3em 3em;
     height: auto;
-
-    .output-circle {
-      flex-basis: 50cqmin;
-    }
-    h3 {
-      font-size: 1.5em;
-    }
+  }
+  .result .output-circle {
+    flex-basis: 50cqmin;
+  }
+  .result h3 {
+    font-size: 1.5em;
   }
 
   /* SUMMARY COMPONENT */
@@ -439,16 +437,14 @@ button:focus {
   }
 
   /* COMPONENTS */
-  .component {
-    h2 {
-      font-size: 1.25em;
-    }
-    h3 {
-      font-size: 2em;
-    }
-    label > p {
-      font-weight: 500;
-    }
+  .component h2 {
+    font-size: 1.25em;
+  }
+  .component h3 {
+    font-size: 2em;
+  }
+  .component label > p {
+    font-weight: 500;
   }
 
   /* RESULT COMPONENT */
@@ -456,10 +452,9 @@ button:focus {
     width: 50%;
     height: auto;
     border-radius: 25px;
-
-    .output-circle {
-      flex-basis: 80cqmin;
-    }
+  }
+  .result .output-circle {
+    flex-basis: 80cqmin;
   }
 
   /* SUMMARY COMPONENT */
