@@ -452,6 +452,8 @@ button:focus {
     width: 50%;
     height: auto;
     border-radius: 25px;
+    padding: 2em 3em 3em;
+    justify-content: space-between;
   }
   .result .output-circle {
     flex-basis: 80cqmin;
